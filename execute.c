@@ -17,7 +17,7 @@ instruction_t opst[] =
 {"pall", pall},
 {"pint", pint},
 {"pop", pop},
-{"swap", f_swap},
+{"swap", el_swap},
 {"add", el_add},
 {"nop", nop},
 {"sub", f_sub},
@@ -29,7 +29,7 @@ instruction_t opst[] =
 {"rotl", f_rotl},
 {"rotr", f_rotr},
 {"queue", f_queue},
-{"stack", f_stack},
+{"stack", stack},
 {NULL, NULL}
 };
 
