@@ -3,21 +3,13 @@
 
 /**
 * nop - no operation code doing nothing
-* @stack: pointer pointing top of stack
-* @line_num: int rep line of opcode
+* @head: pointer pointing top of stack
+* @counter: rep num of line of opcode
 * Return: always 0
 */
 
-void nop(stack_t **stack, unsigned int line_num)
+void nop(stack_t **head, unsigned int counter)
 {
-(void)stack;
-(void)line_num;
-}
-
-int main(void)
-{
-
-nop(NULL, 0);
-
-return (0);
+(void)head;
+(void)counter;
 }
