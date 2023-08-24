@@ -45,6 +45,8 @@ typedef struct instruction_s
 
 
 /*Nathaniel's functions from here*/
+void nop(stack_t **stack, unsigned int line_num);
+int main(void);
 
 
 
