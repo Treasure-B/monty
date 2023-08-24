@@ -48,8 +48,6 @@ typedef struct instruction_s
 void nop(stack_t **head, unsigned int counter);
 int main(void);
 void el_add(stack_t **head, unsigned int counter);
-int execute(char *content, stack_t **stack, unsigned int counter, FILE *file);
-
 
 
 #endif
