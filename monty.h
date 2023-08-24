@@ -38,7 +38,7 @@ typedef struct instruction_s
 	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
-<<<<<<< HEAD
+
 /**
  * struct bus_s - variables -args, file, line content
  * @arg: value
@@ -66,18 +66,13 @@ void pop(stack_t **stack, unsigned int line_num);
 void addnode(stack_t **stack, int n);
 void free_stack(stack_t *stack);
 void addqueue(stack_t **stack, int n);
-=======
-
-/*Thabiso's Functions from here*/
-
-
 
 
 /*Nathaniel's functions from here*/
 void nop(stack_t **head, unsigned int counter);
 int main(void);
 void el_add(stack_t **head, unsigned int counter);
+int main(int argc, char *argv[]);
+int execute(char *content, stack_t **stack, unsigned int counter, FILE *file);
 
-
->>>>>>> 712ce63c9e2d2706cdfc15cfa3cae4008c7deff4
 #endif
