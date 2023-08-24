@@ -2,10 +2,9 @@
 
 /**
 * el_add - adds top 2 elements of stack
-* main - creates empty stack head
 * @head: stack head
 * @counter: line_number
-* Return: always 0
+* Return: is NULL
 */
 
 void el_add(stack_t **head, unsigned int counter)
@@ -33,14 +32,4 @@ aux = h->n + h->next->n;
 h->next->n = aux;
 *head = h->next;
 free(h);
-}
-
-
-int main(void)
-{
-stack_t *head = NULL;
-
-el_add(&head, 1);
-
-return (0);
 }
