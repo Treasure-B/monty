@@ -38,4 +38,15 @@ typedef struct instruction_s
         void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
+
+/*Thabiso's Functions from here*/
+
+
+
+
+/*Nathaniel's functions from here*/
+
+
+
+
 #endif
