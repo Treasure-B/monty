@@ -47,7 +47,7 @@ typedef struct instruction_s
 /*Nathaniel's functions from here*/
 void nop(stack_t **head, unsigned int counter);
 int main(void);
-
+void el_add(stack_t **head, unsigned int counter);
 
 
 #endif
