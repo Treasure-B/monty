@@ -66,7 +66,7 @@ void pop(stack_t **stack, unsigned int line_num);
 void addnode(stack_t **stack, int n);
 void free_stack(stack_t *stack);
 void addqueue(stack_t **stack, int n);
-
+void pchar(stack_t **stack, unsigned int line_num);
 
 /*Nathaniel's functions from here*/
 void nop(stack_t **head, unsigned int counter);
