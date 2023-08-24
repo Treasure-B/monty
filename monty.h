@@ -77,6 +77,8 @@ void addqueue(stack_t **stack, int n);
 void nop(stack_t **head, unsigned int counter);
 int main(void);
 void el_add(stack_t **head, unsigned int counter);
+int execute(char *content, stack_t **stack, unsigned int counter, FILE *file);
+
 
 
 >>>>>>> 712ce63c9e2d2706cdfc15cfa3cae4008c7deff4
