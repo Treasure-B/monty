@@ -57,7 +57,8 @@ typedef struct bus_s
 
 extern bus_t bus;
 
-/*T Prototypes*/
+/**
+T Prototypes
 
 void push(stack_t **stack, unsigned int line_num);
 void pall(stack_t **head, unsigned int line_number);
@@ -66,30 +67,16 @@ void pop(stack_t **stack, unsigned int line_num);
 void addnode(stack_t **stack, int n);
 void free_stack(stack_t *stack);
 void addqueue(stack_t **stack, int n);
-
+*/
 
 /*Nathaniel's functions from here*/
+
 void nop(stack_t **head, unsigned int counter);
-int main(void);
-void el_add(stack_t **head, unsigned int counter);
-int main(int argc, char *argv[]);
-int execute(char *content, stack_t **stack, unsigned int counter, FILE *file);
+void swap_nodes(stack_t **head, unsigned int counter);
+void add_nodes(stack_t **head, unsigned int counter);
+void sub_nodes(stack_t **head, unsigned int counter);
+void div_nodes(stack_t **head, unsigned int counter);
 
-
-char *_realloc(char *ptr, unsigned int old_size, unsigned int new_size);
-ssize_t getstdin(char **lineptr, int file);
-char  *clean_line(char *content);
-void el_swap(stack_t **head, unsigned int counter);
-void f_sub(stack_t **head, unsigned int counter);
-void f_div(stack_t **head, unsigned int counter);
-void f_mul(stack_t **head, unsigned int counter);
-void mod(stack_t **head, unsigned int counter);
-void f_pchar(stack_t **head, unsigned int counter);
-void f_pstr(stack_t **head, unsigned int counter);
-void f_rotl(stack_t **head, unsigned int counter);
-void f_rotr(stack_t **head, __attribute__((unused)) unsigned int counter);
-void f_queue(stack_t **head, unsigned int counter);
-void stack(stack_t **head, unsigned int counter);
 
 
 #endif
