@@ -57,29 +57,4 @@ typedef struct bus_s
 
 extern bus_t bus;
 
-/**
-T Prototypes
-
-void push(stack_t **stack, unsigned int line_num);
-void pall(stack_t **head, unsigned int line_number);
-void pint(stack_t **stack, unsigned int line_num);
-void pop(stack_t **stack, unsigned int line_num);
-void addnode(stack_t **stack, int n);
-void free_stack(stack_t *stack);
-void addqueue(stack_t **stack, int n)
-*/
-
-void pchar(stack_t **stack, unsigned int line_num);
-
-
-/*Nathaniel's functions from here*/
-
-void nop(stack_t **head, unsigned int counter);
-void swap_nodes(stack_t **head, unsigned int counter);
-void add_nodes(stack_t **head, unsigned int counter);
-void sub_nodes(stack_t **head, unsigned int counter);
-void div_nodes(stack_t **head, unsigned int counter);
-
-
-
 #endif
