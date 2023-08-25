@@ -66,12 +66,11 @@ void pint(stack_t **stack, unsigned int line_num);
 void pop(stack_t **stack, unsigned int line_num);
 void addnode(stack_t **stack, int n);
 void free_stack(stack_t *stack);
-void addqueue(stack_t **stack, int n);
-<<<<<<< HEAD
+void addqueue(stack_t **stack, int n)
 */
-=======
+
 void pchar(stack_t **stack, unsigned int line_num);
->>>>>>> 2772462a4d2418487bd4fd3d9373c76c46bf7557
+
 
 /*Nathaniel's functions from here*/
 
