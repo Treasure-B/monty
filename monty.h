@@ -82,7 +82,7 @@ void el_queue(stack_t **head, unsigned int counter);
 void el_stack(stack_t **head, unsigned int counter);
 int pop(void);
 int main(void);
-void el_nop(void);
+void f_nop(stack_t **head, unsigned int counter);
 
 
 #endif

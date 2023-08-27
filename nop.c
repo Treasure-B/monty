@@ -1,18 +1,12 @@
 #include "monty.h"
 /**
-*el_nop- no operation or nothing
-*main - execution
+*f_nop- nothing
+*@head: stack head
+*@counter: line_number
 *Return: no return
 */
-
-void el_nop(void)
+void f_nop(stack_t **head, unsigned int counter)
 {
-
-}
-
-int main(void)
-{
-el_nop();
-
-return (0);
+(void) counter;
+(void) head;
 }
