@@ -68,7 +68,6 @@ void free_stack(stack_t *head);
 void el_pop(stack_t **head, unsigned int counter);
 void el_swap(stack_t **head, unsigned int counter);
 void el_add(stack_t **head, unsigned int counter);
-void el_nop(stack_t **head, unsigned int counter);
 void el_sub(stack_t **head, unsigned int counter);
 void el_div(stack_t **head, unsigned int counter);
 void el_mul(stack_t **head, unsigned int counter);
@@ -83,6 +82,7 @@ void el_queue(stack_t **head, unsigned int counter);
 void el_stack(stack_t **head, unsigned int counter);
 int pop(void);
 int main(void);
+void el_nop(void);
 
 
 #endif
