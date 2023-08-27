@@ -57,32 +57,13 @@ typedef struct bus_s
 
 extern bus_t bus;
 
-char *_realloc(char *ptr, unsigned int old_size, unsigned int new_size);
-ssize_t getstdin(char **lineptr, int file);
-char  *clean_line(char *content);
-void el_push(stack_t **head, unsigned int number);
-void el_pall(stack_t **head, unsigned int number);
-void el_pint(stack_t **head, unsigned int number);
-int execute(char *content, stack_t **head, unsigned int counter, FILE *file);
-void free_stack(stack_t *head);
-void el_pop(stack_t **head, unsigned int counter);
-void el_swap(stack_t **head, unsigned int counter);
-void el_add(stack_t **head, unsigned int counter);
-void el_sub(stack_t **head, unsigned int counter);
-void el_div(stack_t **head, unsigned int counter);
-void el_mul(stack_t **head, unsigned int counter);
-void el_mod(stack_t **head, unsigned int counter);
-void el_pchar(stack_t **head, unsigned int counter);
-void el_pstr(stack_t **head, unsigned int counter);
-void el_rotl(stack_t **head, unsigned int counter);
-void el_rotr(stack_t **head, __attribute__((unused)) unsigned int counter);
-void addnode(stack_t **head, int n);
-void addqueue(stack_t **head, int n);
-void el_queue(stack_t **head, unsigned int counter);
-void el_stack(stack_t **head, unsigned int counter);
-int pop(void);
-int main(int argc, char *argv[]);
+
+int main(void);
 void f_nop(stack_t **head, unsigned int counter);
+void push(int value);
+int pop(void);
+void el_add(stack_t **head, unsigned int counter);
+int main(int argc, char *argv[]);
 
 
 #endif
