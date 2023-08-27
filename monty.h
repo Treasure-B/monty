@@ -56,9 +56,9 @@ typedef struct bus_s
 }  bus_t;
 
 extern bus_t bus;
+int stack[STACK_SIZE];
+int top = -1;
 
-
-int main(void);
 void f_nop(stack_t **head, unsigned int counter);
 void push(int value);
 int pop(void);

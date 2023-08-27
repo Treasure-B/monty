@@ -1,19 +1,12 @@
 #include "monty.h"
 
 #define STACK_SIZE 100
+
 /**
 * push - adds elements
 * @value: the stack no
-* pop - remove and return elem
-* el_add - performs additions
-* @head: the top
-* @counter: last
-* main - execution
-* Return: always NULL or exit
 */
 
-int stack[STACK_SIZE];
-int top = -1;
 
 void push(int value)
 {
@@ -25,14 +18,26 @@ exit(EXIT_FAILURE);
 stack[++top] = value;
 }
 
+/**
+* pop - remove and return elem
+* Return: stack
+*/
+
 int pop(void)
 {
-if (top < 0) {
+if (top < 0)
+{
 printf("Stack Underflow\n");
 exit(EXIT_FAILURE);
 }
-return stack[top--];
+return (stack[top--]);
 }
+
+/**
+* el_add - performs additions
+* @head: the top or head
+* @counter: the last in
+*/
 
 void el_add(stack_t **head, unsigned int counter)
 {
@@ -46,6 +51,11 @@ int a = pop();
 int b = pop();
 push(a + b);
 }
+
+/**
+* main - the execution func
+* Return: resukts if exec
+*/
 
 int main(void)
 {
