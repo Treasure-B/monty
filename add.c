@@ -1,32 +1,59 @@
 #include "monty.h"
+
+#define STACK_SIZE 100
 /**
- * el_add - add top 2 elmnts of stack
- * @head: stack head
- * @counter: line_number
- * Return: no return
+* push - adds elements
+* @value: the stack no
+* pop - remove and return elem
+* el_add - performs additions
+* @head: the top
+* @counter: last
+* main - execution
+* Return: always NULL or exit
 */
+
+int stack[STACK_SIZE];
+int top = -1;
+
+void push(int value)
+{
+if (top >= STACK_SIZE - 1)
+{
+printf("Stack Overflow\n");
+exit(EXIT_FAILURE);
+}
+stack[++top] = value;
+}
+
+int pop(void)
+{
+if (top < 0) {
+printf("Stack Underflow\n");
+exit(EXIT_FAILURE);
+}
+return stack[top--];
+}
+
 void el_add(stack_t **head, unsigned int counter)
 {
-	stack_t *h;
-	int len = 0, aux;
+if (top < 1)
+{
+printf("Error: can't add, stack too short\n");
+exit(EXIT_FAILURE);
+}
 
-	h = *head;
-	while (h)
-	{
-		h = h->next;
-		len++;
-	}
-	if (len < 2)
-	{
-		fprintf(stderr, "L%d: can't add, stack too short\n", counter);
-		fclose(bus.file);
-		free(bus.content);
-		free_stack(*head);
-		exit(EXIT_FAILURE);
-	}
-	h = *head;
-	aux = h->n + h->next->n;
-	h->next->n = aux;
-	*head = h->next;
-	free(h);
+int a = pop();
+int b = pop();
+push(a + b);
+}
+
+int main(void)
+{
+push(5);
+push(10);
+el_add();
+
+printf("Result: %d\n", stack[top]);
+
+return (EXIT_SUCCESS);
 }
