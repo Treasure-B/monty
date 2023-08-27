@@ -82,6 +82,7 @@ void el_queue(stack_t **head, unsigned int counter);
 void el_stack(stack_t **head, unsigned int counter);
 int pop(void);
 int main(void);
+int main(int argc, char *argv[]);
 void f_nop(stack_t **head, unsigned int counter);
 
 
