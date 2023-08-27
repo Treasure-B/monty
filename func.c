@@ -1,5 +1,5 @@
 #include "monty.h"
-
+#include "errors.c"
 
 /**
 * f_nop - Does nothing.
