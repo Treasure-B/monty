@@ -8,10 +8,4 @@ void nop(void)
 {
 __asm__("nop");
 }
-int main(void)
-{
-nop();
-
-return (0);
-}
 
