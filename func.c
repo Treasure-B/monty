@@ -1,22 +1,6 @@
 #include "monty.h"
 #include "errors.c"
 
-/**
-* f_nop - Does nothing.
-* @stack: pointer pointing to top
-* @line_number: Int rep the line num
-*/
-void f_nop(stack_t **stack, unsigned int line_number)
-{
-(void)stack;
-(void)line_number;
-}
-
-int main(void)
-{
-f_nop()
-}
-
 
 /**
 * f_swap - Swaps the top two elements
