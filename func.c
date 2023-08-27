@@ -12,6 +12,11 @@ void f_nop(stack_t **stack, unsigned int line_number)
 (void)line_number;
 }
 
+int main(void)
+{
+f_nop()
+}
+
 
 /**
 * f_swap - Swaps the top two elements
