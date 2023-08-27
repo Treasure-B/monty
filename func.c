@@ -1,39 +1,5 @@
 #include "monty.h"
 
-void free_nodes(void);
-
-/**
-* more_err - handles errors.
-* @error_code: error code as follow
-* case 8 ~> When stack is too short
-* case 9 ~> Divide by zero
-*/
-void more_err(int error_code, ...)
-{
-va_list ag;
-char *op;
-int l_num;
-
-va_start(ag, error_code);
-switch (error_code)
-{
-
-case 8:
-l_num = va_arg(ag, unsigned int);
-op = va_arg(ag, char *);
-printf("L%d: can't %s, stack too short\n", l_num, op);
-break;
-case 9:
-printf("L%d: division by zero\n",
-va_arg(ag, unsigned int));
-break;
-default:
-printf("Unknown error code: %d\n", error_code);
-break;
-}
-free_nodes();
-exit(EXIT_FAILURE);
-}
 
 /**
 * f_nop - Does nothing.
