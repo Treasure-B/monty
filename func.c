@@ -1,5 +1,7 @@
 #include "monty.h"
 
+void free_nodes(void);
+
 /**
 * more_err - handles errors.
 * @error_code: error code as follow
@@ -26,6 +28,7 @@ printf("L%d: division by zero\n",
 va_arg(ag, unsigned int));
 break;
 default:
+printf("Unknown error code: %d\n", error_code);
 break;
 }
 free_nodes();
