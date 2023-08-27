@@ -2,10 +2,13 @@
 
 /**
 * nop - do nothing
+* @head: top of stack
+* @counter: bottom of list
 */
 
-void nop(void)
+void nop(stack_t **head, unsigned int counter)
 {
-__asm__("nop");
+	(void) counter;
+	(void) head;
 }
 
